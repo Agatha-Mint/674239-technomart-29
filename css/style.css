@@ -33,6 +33,7 @@
   padding: 0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   color: var(--basic-blue);
   background-color: var(--background);
@@ -327,4 +328,108 @@
 
 .footer-connect {
   background-color: var(--basic-bluedark);
+}
+
+
+/* Catalog */
+
+.breadcrumbs {
+  list-style: none;
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-item a {
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-item:hover a{
+  text-decoration: underline;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-title {
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sort-title {
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.catalog-products-list {
+  list-style: none;
+}
+
+.catalog-products-item h3{
+  font-family: 'PT Sans', Arial, sans-serif;
+  color: var(--basic-black);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-products-item .buy-button {
+  color: var(--basic-white);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-products-item .cart-button {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-item a{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.pagination-item .visited{
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.description-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.description-subtitle {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
 }
