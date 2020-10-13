@@ -27,9 +27,11 @@
 
 /* Global */
 
-.page body {
-  min-width: 1200px;
-  margin: 0;
+.page {
+  height: 100%;
+  min-width: 940px;
+  width: 940px;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
@@ -37,6 +39,13 @@
   line-height: 24px;
   color: var(--basic-blue);
   background-color: var(--background);
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .page a {
@@ -51,8 +60,15 @@
 
 /* Main header */
 
+.main-header {
+  display: grid;
+  grid-template-rows: 42px 158px 60px;
+}
+
 .first-header {
   background-color: var(--basic-bluedark);
+  display: grid;
+  grid-template-columns: 220px 100px 440px;
 }
 
 .search, .first-menu a {
@@ -61,6 +77,15 @@
 
 .first-menu {
   list-style: none;
+  display: grid;
+  grid-template-columns: 120px 120px 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.mid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .subtitle {
@@ -70,7 +95,7 @@
   color: var(--basic-red);
 }
 
-.header-tel {
+.mid-header-info a{
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -101,6 +126,8 @@
 .site-nav {
   list-style: none;
   font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .site-nav-item:hover {
@@ -116,6 +143,39 @@
 .services-list {
   list-style: none;
   color: var(--basic-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0;
+}
+
+.services-item {
+  width: 300px;
+  height: 123px;
+}
+
+.item-1 {
+  background-color: var(--special-yellow);
+}
+
+.item-2 {
+  background-color: var(--special-blue);
+}
+
+.item-3 {
+  background-color: var(--special-lilac);
+}
+
+.item-4 {
+  background-color: var(--special-greenlight);
+  grid-column-start: 3;
+}
+
+.item-5 {
+  background-color: var(--special-yellow);
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
 .services-item h3 {
@@ -159,14 +219,34 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
 }
 
 .head-title {
   background-color: var(--special-pink);
 }
 
+.products-title,
+.manufacturers-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 89px;
+}
+
 .products-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 318px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.products-item {
+  height: 318px;
 }
 
 .products-item-name {
@@ -194,6 +274,12 @@
 
 .manufacturers-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 145px 145px;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 .title {
@@ -201,6 +287,13 @@
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.services-description {
+  display: grid;
+  grid-template-columns: 240px 700px;
+  margin: 0;
+  padding: 0;
 }
 
 .support {
@@ -237,6 +330,13 @@
   line-height: 24px;
 }
 
+.main-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
 .info, .contacts {
   background-color: var(--basic-white);
 }
@@ -268,6 +368,23 @@
 
 /* Footer */
 
+.footer-navigation {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  grid-template-rows: 68px 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
 .footer-address, .footer-tel {
   font-size: 18px;
   line-height: 24px;
@@ -294,6 +411,13 @@
   font-size: 18px;
   line-height: 24px;
   color: var(--special-yellowlight);
+}
+
+.footer-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
 }
 
 .copyright {
@@ -328,8 +452,13 @@
 
 .footer-connect {
   background-color: var(--basic-bluedark);
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
 }
 
+.social {
+  list-style: none;
+}
 
 /* Catalog */
 
